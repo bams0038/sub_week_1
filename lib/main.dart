@@ -19,16 +19,12 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Login"),
         ),
-        body: Container(
-          child: Card(
-            margin: const EdgeInsets.all(20),
-            elevation: 8,
+        body: Container(          
             child: Padding(
               padding: const EdgeInsets.all(15.0),
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  //BAGIAN PERTAMA ADALAH TEKS FORM LOGIN
                   Padding(
                     padding: const EdgeInsets.only(top: 10),
                     child: Text(
@@ -79,18 +75,18 @@ class MyApp extends StatelessWidget {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(80.0),
                     ),
-                    padding: const EdgeInsets.all(0.0),
+                    padding: const EdgeInsets.all(0.0),                    
                     child: Ink(
                       decoration: const BoxDecoration(
                         color: Colors.green,
                         borderRadius: BorderRadius.all(
-                          Radius.circular(80.0),
+                          Radius.circular(25),
                         ),
                       ),
                       child: Container(
                         constraints: const BoxConstraints(
-                          minWidth: 150.0,
-                          minHeight: 36.0,
+                          maxWidth: 250,
+                          maxHeight: 40.0,                          
                         ),
                         alignment: Alignment.center,
                         child: const Text(
@@ -122,7 +118,7 @@ class MyApp extends StatelessWidget {
                 ],
               ),
             ),
-          ),
+          
         ),
       ),
     );
